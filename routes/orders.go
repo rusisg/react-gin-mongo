@@ -4,7 +4,8 @@ import (
 	"context"
 	"fmt"
 	"net/http"
-	"server/models"
+	"server/server/models"
+
 	"time"
 
 	"github.com/gin-gonic/gin"
