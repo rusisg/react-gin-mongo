@@ -23,7 +23,6 @@ func AddOrder(c *gin.Context) {
 	var order models.Order
 
 	validationErr := validate.Struct(order)
-	KOTAK
 	if err := c.BindJSON(&order); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{
 			"error": validationErr.Error(),
